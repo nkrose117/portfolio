@@ -1,3 +1,66 @@
-body {
-    background-color: darkgray;
+.body {
+    background-image: url("mark-tuzman-kwXwZxKVgao-unsplash.jpg");
+    /* credit to Mark Tuzman: get details on how to properly annotate this */
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.flex__container {
+    display: flex;
+    flex-direction: row;
+    padding-top: 200px;
+}
+
+.section__one {
+    
+    max-width: 40%;
+    display: flex;
+    justify-content: right;
+    align-items: flex-end;
+}
+
+.section__two {
+    max-width: 50%;
+    display: flex;
+    justify-content: left;
+    align-items: flex-end;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(197, 194, 194);
+}
+
+.center__pic {
+    width: 60%;
+    border: 3px solid rgb(243, 181, 46);
+    border-radius: 15px;
+    padding: 3px;
+}
+
+.welcome {
+    font-size: 100px;
+    margin-bottom: 0;
+    padding-left: 4%;
+}
+
+.intro {
+    padding-left: 5%;
+    padding-right: 25%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    color: rgb(233, 229, 229);
+    
+}
+
+.center__nav {
+    padding-left: 32%;
+}
+.my__link {
+    color: #ddd;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 2px;
+    
 }
