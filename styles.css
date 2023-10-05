@@ -4,63 +4,186 @@
     background-color: black;
     background-size: cover;
     background-repeat: no-repeat;
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
 }
 
-.flex__container {
-    display: flex;
-    flex-direction: row;
-    padding-top: 200px;
+/* This is where I set the layout for my home page grid container */
+.container { 
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    grid-template-columns: 15% 60% 25%;
+    grid-template-rows: 15% 60% 25%;
 }
 
-.section__one {
-    
-    max-width: 40%;
-    display: flex;
-    justify-content: right;
-    align-items: flex-end;
-}
-
-.section__two {
-    max-width: 50%;
-    display: flex;
-    justify-content: left;
-    align-items: flex-end;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: rgb(197, 194, 194);
-}
-
-.center__pic {
-    width: 60%;
-    border: 3px solid rgb(243, 181, 46);
-    border-radius: 15px;
-    padding: 3px;
-}
+/* This is where I arranged the homepage content within the grid and added styling */
 
 .welcome {
-    font-size: 100px;
-    margin-bottom: 0;
-    padding-left: 4%;
+    display: grid;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    padding-top: 15%;
 }
-
 .intro {
-    padding-left: 5%;
-    padding-right: 25%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 16px;
-    color: rgb(233, 229, 229);
-    
+    display: grid;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    padding-top: 25%;
 }
 
-.center__nav {
-    padding-left: 32%;
+.learn__more {
+    display: grid;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    padding-top: 30%;
 }
-.my__link {
-    color: #ddd;
+
+/* This is where I positioned and styled the navbar to apply to each HTML page */
+
+.navbar ul {
+    padding-right: 10px;
+    margin:0;
+    list-style: none;
+    text-align: right;
+}
+
+.navbar li {
+    display: inline-block;
+    padding-top: 10px;
+}
+
+.navbar a {
+    text-decoration: none;
+    width: 100px;
+    display: block;
+    padding: 2px 2px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.navbar a:hover {
+    background: rgb(87, 86, 86);
+
+}
+
+.nav__links {
+    color: #bbb6b6;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 15px;
     text-decoration: none;
     border: 1px solid #ddd;
     border-radius: 8px;
-    padding: 2px;
-    
+    padding: 5px;
+} */
+
+/* This is where I positioned and styled the footer and added footer links for each HTML page */
+
+footer {
+    background-color: #ddd;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100px;
 }
+
+/* *This is where I setup the Bio page grid */
+
+.bio__container {
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 25% 25% 25% 25%;
+}
+
+/* This is where I arranged the content within the grid and added styling */
+
+.bio__image {
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 5;
+}
+
+.center__pic {
+    height: 300px;
+    width: 415px;
+    padding-left: 10%;
+}
+
+.bio__section {
+    display: grid;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 5;
+    padding-left: 20%;
+}
+
+/* *This is where I set up the grid and flex layout for the project displays on project html page */
+
+
+.grid__container {
+    max-width: 1000px;
+    height: 650px;
+    margin: 0 auto;
+    display: grid;
+
+    grid-template-columns: 1fr, 1fr;
+    grid-template-rows: 1fr, 1fr;
+}
+
+.grid__item {
+    background-color: grey;
+    margin-bottom: 0;
+}
+
+.flex__container {
+    display: flex;
+}
+
+.project__one {
+    flex: 1;
+    background-color: rgb(0, 255, 89);
+    justify-content: center;
+}
+
+.project__two {
+    flex: 1;
+    background-color: blueviolet;
+
+}
+
+.project__three {
+    flex: 1;
+    background-color: rgb(226, 43, 107);
+}
+
+/* .flex__container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 900px;
+    margin-top: 300px;
+    grid-column-start: 1;
+    grid-column-end: 2
+}
+
+.project__one {
+    display: flex;
+    font-size: 16px;
+    color: #ddd;
+    grid-column-start:  ;
+
+} */
