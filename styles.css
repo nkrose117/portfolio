@@ -9,6 +9,16 @@
     height: 100%;
 }
 
+.footer {
+    background-color: aqua;
+    color: #ddd;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    margin-top: 200px;
+}
+
 /* This is where I set the layout for my home page grid container */
 .container { 
     display: grid;
@@ -86,13 +96,6 @@
 
 /* This is where I positioned and styled the footer and added footer links for each HTML page */
 
-footer {
-    background-color: #ddd;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100px;
-}
 
 /* *This is where I setup the Bio page grid */
 
@@ -129,43 +132,84 @@ footer {
     padding-left: 20%;
 }
 
-/* *This is where I set up the grid and flex layout for the project displays on project html page */
+/* *This is where I set up the flex layout for the project displays on project html page */
 
+.project__header {
+    color: #ddd;
+    text-align: center;
+    padding-bottom: 0;
+    padding-top: 10px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 100px;
+    
+}
 
-.grid__container {
+.flex {
     max-width: 1000px;
-    height: 650px;
-    margin: 0 auto;
-    display: grid;
+    max-height: 550px;
+    margin-left:auto;
+    margin-right:auto;
+    
+    display: flex; 
+    column-gap: 15px;
 
-    grid-template-columns: 1fr, 1fr;
-    grid-template-rows: 1fr, 1fr;
 }
 
-.grid__item {
-    background-color: grey;
-    margin-bottom: 0;
-}
-
-.flex__container {
+.flex__header {
     display: flex;
+    justify-content: center;
+    color:#ddd;
+    
 }
 
-.project__one {
-    flex: 1;
-    background-color: rgb(0, 255, 89);
+.image {
+    display: flex;
     justify-content: center;
 }
 
-.project__two {
-    flex: 1;
-    background-color: blueviolet;
+.flex__words {
+    display: flex;
+    padding:15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    color: #ddd;
+}
+
+.container__one {
+    background-color: rgba(43, 43, 102, 0.9);
+    display: flex;
+    flex-direction: column;
+    border: 3px solid rgb(243, 181, 46);
+    border-radius: 15px;
+    padding: 3px;
+}
+
+.project__one {
 
 }
 
+.container__two {
+    background-color: rgba(43, 43, 102, 0.9);
+    display: flex;
+    flex-direction: column;
+    border: 3px solid rgb(243, 181, 46);
+    border-radius: 15px;
+    padding: 3px;
+}
+.project__two {
+    
+}
+
+.container__three {
+    background-color: rgba(43, 43, 102, 0.9);
+    display: flex;
+    flex-direction: column;
+    border: 3px solid rgb(243, 181, 46);
+    border-radius: 15px;
+    padding: 3px;
+}
 .project__three {
-    flex: 1;
-    background-color: rgb(226, 43, 107);
+    
 }
 
 /* .flex__container {
