@@ -1,59 +1,12 @@
 .body {
     background-image: url("mark-tuzman-kwXwZxKVgao-unsplash.jpg");
-    /* credit to Mark Tuzman: get details on how to properly annotate this */
-    background-color: black;
+    /* Photo credit to Mark Tuzman */
+    background-color: white;
     background-size: cover;
     background-repeat: no-repeat;
     margin: 0px;
     padding: 0px;
     height: 100%;
-}
-
-.footer {
-    background-color: aqua;
-    color: #ddd;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    margin-top: 200px;
-}
-
-/* This is where I set the layout for my home page grid container */
-.container { 
-    display: grid;
-    height: 100vh;
-    width: 100vw;
-    grid-template-columns: 15% 60% 25%;
-    grid-template-rows: 15% 60% 25%;
-}
-
-/* This is where I arranged the homepage content within the grid and added styling */
-
-.welcome {
-    display: grid;
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    padding-top: 15%;
-}
-.intro {
-    display: grid;
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    padding-top: 25%;
-}
-
-.learn__more {
-    display: grid;
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    padding-top: 30%;
 }
 
 /* This is where I positioned and styled the navbar to apply to each HTML page */
@@ -81,7 +34,6 @@
 
 .navbar a:hover {
     background: rgb(87, 86, 86);
-
 }
 
 .nav__links {
@@ -92,10 +44,70 @@
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 5px;
-} */
+} 
 
-/* This is where I positioned and styled the footer and added footer links for each HTML page */
+/* This is where I positioned and styled the footer and added footer links */
 
+.footer {
+    color: #ddd;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    margin-top: 200px;
+}
+
+/* This is where I set the layout for my home page grid container */
+
+#container { 
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 25% 25% 25% 25%; 
+}
+
+/* This is where I arranged the homepage content within the grid and added styling */
+
+.welcome {
+    color:#ddd;
+    font-weight: lighter;
+    text-shadow: 3px 3px black;
+    font-size: 100px; 
+    margin: 0; 
+    grid-column-start: 2;
+    grid-row-start: 2;
+    margin-bottom: 0;
+}
+.intro {
+    color:#ddd;
+    text-shadow: 2px 2px black;
+    font-size: 19px;
+    padding-top: 10px; 
+    padding-left: 10px;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    margin-top: -30px;
+}
+
+.learn__more {
+    padding-top: 10px; 
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    padding-left: 70%;
+    margin-top: -30px;
+}
+
+.my__link {
+    text-decoration: none;
+    color: rgb(243, 181, 46);
+    font-size: 20px;
+    border: 3px solid rgb(243, 181, 46);
+    border-radius: 15px;
+    padding: 3px;
+}
 
 /* *This is where I setup the Bio page grid */
 
@@ -109,31 +121,60 @@
 
 /* This is where I arranged the content within the grid and added styling */
 
-.bio__image {
+.bio__picture {
     display: grid;
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 2;
-    grid-row-end: 5;
+    grid-row-end: 3;
+    padding-left: 200px;
 }
-
 .center__pic {
     height: 300px;
     width: 415px;
-    padding-left: 10%;
+    border: 3px solid rgb(243, 181, 46);
+    border-radius: 15px;
+    padding: 3px;
 }
 
 .bio__section {
     display: grid;
-    grid-column-start: 2;
+    grid-column-start: 3;
     grid-column-end: 5;
-    grid-row-start: 2;
-    grid-row-end: 5;
-    padding-left: 20%;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    padding-right: 20%;
+    padding-top: 110px;
+    padding-bottom: 0px;
+}
+
+.bio__header {
+    font-size: 90px;
+    font-weight: lighter;
+    font-weight: lighter;
+    text-shadow: 3px 3px black;
+    color:#ddd;
+    margin-bottom: 0px;
+}
+
+.bio {
+    margin-top: -50px;
+    color:#ddd;
+    text-shadow: 1px 1px black;
 }
 
 /* *This is where I set up the flex layout for the project displays on project html page */
 
+.flex__body {
+    background-image: url("mark-tuzman-kwXwZxKVgao-unsplash.jpg");
+    /* credit to Mark Tuzman */
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+}
 .project__header {
     color: #ddd;
     text-align: center;
@@ -141,6 +182,8 @@
     padding-top: 10px;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 100px;
+    font-weight: lighter;
+    text-shadow: 3px 3px black;
     
 }
 
@@ -149,16 +192,17 @@
     max-height: 550px;
     margin-left:auto;
     margin-right:auto;
-    
+    padding-bottom: 200px;
     display: flex; 
     column-gap: 15px;
-
 }
 
 .flex__header {
     display: flex;
     justify-content: center;
     color:#ddd;
+    font-weight: lighter;
+    text-shadow: 2px 2px black;
     
 }
 
@@ -184,10 +228,6 @@
     padding: 3px;
 }
 
-.project__one {
-
-}
-
 .container__two {
     background-color: rgba(43, 43, 102, 0.9);
     display: flex;
@@ -196,9 +236,7 @@
     border-radius: 15px;
     padding: 3px;
 }
-.project__two {
-    
-}
+
 
 .container__three {
     background-color: rgba(43, 43, 102, 0.9);
@@ -208,26 +246,5 @@
     border-radius: 15px;
     padding: 3px;
 }
-.project__three {
-    
-}
 
-/* .flex__container {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: 900px;
-    margin-top: 300px;
-    grid-column-start: 1;
-    grid-column-end: 2
-}
 
-.project__one {
-    display: flex;
-    font-size: 16px;
-    color: #ddd;
-    grid-column-start:  ;
-
-} */
